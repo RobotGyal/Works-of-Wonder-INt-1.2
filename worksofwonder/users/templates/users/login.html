@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="icon.png">
+    <title>Login</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+
+
+<body background = "quiet.jpg" id="background">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand navbar-dark justify-content-center">
+            <a href="index.html">
+                    <img src="mark.png" alt="HTML tutorial" style="width: 70px; height: 90px;">
+                  </a>
+        <h1>Login</h1>
+    </nav>
+
+
+    <!--HERO-->
+    <div class="jumbotron text-center hero-background-img">
+        <div class="row">
+            <div class="col">
+                <br><br><br>
+                <form action="action_page.php">
+                    Username:<br>
+                    <input type="text" name="username" >
+                    <br><br>
+                    Password:<br>
+                    <input type="text" name="password">
+                    <br>
+                  </form> 
+                <br><a href="writers.html"><button type="button" class="btn btn-outline-light btn-sm">Enter</button></a><br><br>
+                <p>Create Account</p>
+                <p>Forgot Password</p>
+                <p>Trouble Signing In?</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer p-6 text-white">
+            &copy; 2019 Aleia Knight
+          </div>
+</body>
+</html>
+
