@@ -19,5 +19,6 @@ from entries import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('readers/', views.readers, name='readers'),
     path('admin/', admin.site.urls),
 ]
