@@ -1,0 +1,122 @@
+/* body{
+    background-image: url(../pics/quiet.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+} */
+
+#background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#background-scroll{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.hero-background-img{
+    background-color: rgba(255, 255, 255, 0);
+    height: 500px;
+}
+
+.navbar{
+    height: 125px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#header{
+    height: 75px;
+}
+
+.col-6:hover{
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.col-6{
+    height: 380px;
+}
+
+.jumbotron{
+    color:#caad4b;
+    text-shadow: rgb(3, 0, 0) 3px 3px 10px;
+}
+/* #f8d971; */
+
+#dropdown{
+    background-color: black;
+    border-bottom: 6px double #f8d971ad;
+}
+
+#cards{
+    width: 320px;
+    height: 470px;
+    object-fit: cover;
+}
+
+.card-img:hover{
+    opacity: .4;
+}
+
+#card-text{
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#card-text:hover{
+    color: #fff;
+    visibility: visible;
+    opacity: 1;
+}
+
+h1{
+    color: white;
+}
+
+.nav-item{
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+input{
+    border-radius: 10px;
+}
+
+#profile{
+    border: 6px double #f8d971ad;
+}
+
+
+#cards3{
+    align-self: center;
+    height: 300px;
+    background-color: transparent;
+}
+
+#block{
+    height: 600px;
+}
+
+#headers{
+    font-size: 3em;
+    font-family: cursive;
+    color: white;
+    text-shadow: #f8d971 3px 3px 20px;
+
+}
+
+#bio{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 6px double #f8d971ad;
+    width: 600px;
+    height: 150px;
+    text-align: center;
+}
+
+li{
+    color: white;
+}
