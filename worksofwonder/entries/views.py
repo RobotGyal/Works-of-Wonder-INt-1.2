@@ -5,7 +5,7 @@ def index(request):
     return render(request, 'entries/base.html')
 
 def readers(request):
-    return render(request, 'readers.html')
+    return render(request, 'entries/readers.html')
 
 def writers(request):
     return render(request, 'writers.html')
