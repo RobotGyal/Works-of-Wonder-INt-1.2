@@ -30,15 +30,17 @@
             <div class="col-6">
                 <br><br><br><br><br><br>
                 <h1>Readers</h1>
-                <form action='readers/' method='POST'>{% csrf_token %}
+                <form action='account/signup/' method='POST'>{% csrf_token %}
                     <button type="submit" class="btn btn-outline-light btn-sm">Enter</button>
-                <!-- <a href="readers.html"><button type="button" class="btn btn-outline-light btn-sm">Enter</button></a> -->
                 </form>
             </div>
+            
             <div class="align-self-center col-6">
                 <br><br><br><br><br><br>
                 <h1>Writers</h1>
-                <a  href="login.html"><button type="button" class="btn btn-outline-light btn-sm">Enter</button></a>
+                <form action='account/signup/' method='POST'>{% csrf_token %}
+                    <button type="submit" class="btn btn-outline-light btn-sm">Enter</button>
+                </form>            
             </div>
         </div>
     </div>

@@ -1,4 +1,3 @@
-{% extends 'base.html' %}
 {% load static %}
 
     <!DOCTYPE html>
@@ -41,7 +40,10 @@
                     <input type="text" name="password">
                     <br>
                   </form> 
-                <br><a href="writers.html"><button type="button" class="btn btn-outline-light btn-sm">Enter</button></a><br><br>
+
+                  <form action='entries/writers/' method='POST'>{% csrf_token %}
+                    <button type="submit" class="btn btn-outline-light btn-sm">Submit</button>
+                </form>                  
                 <p>Create Account</p>
                 <p>Forgot Password</p>
                 <p>Trouble Signing In?</p>
