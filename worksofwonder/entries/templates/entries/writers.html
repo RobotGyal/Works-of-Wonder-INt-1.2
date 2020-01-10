@@ -1,0 +1,161 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="icon.png">
+    <title>Writers</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'entries/styles.css' %}">
+</head>
+
+
+<body background = "static/entries/quiet.jpg" id="background-scroll">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand navbar-dark justify-content-center">
+        <a href="{%url 'index' %}">
+                <img src="mark.png" alt="home" style="width: 70px; height: 90px;">
+              </a>
+        <h1>Writer</h1>
+
+    </nav>
+
+
+<br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class=".col--6 .col-md-4">
+                <img class="card-img img-fluid" style="width: 230px; height: 300px;" src="girl.jpg"
+                    alt="Card image cap" id="profile">
+
+            </div>
+        </div>
+    </div>
+<!--Bio-->
+    <div class="row justify-content-center">
+        <div class=".col--6 .col-md-4" id="bio">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        </div>
+    </div>
+    </div>
+
+    <br><br>
+
+
+    <div class="row">
+        <div class="col-6" id="block">
+            <div class="card" id="cards3">
+                <div class="card-body">
+                    <br><br>
+                    <p id="headers" style="text-align: center;">In Progress</p>
+                    <ul>
+                        <li>Title:</li>
+                        <li>Description:</li>
+                        <br><br><br>
+                        <li>Title:</li>
+                        <li>Description:</li>
+                        <br><br><br>
+                        <li>Title:</li>
+                        <li>Description:</li>
+                        <br><br><br>
+                        <li>Title:</li>
+                        <li>Description:</li>
+                        <br><br><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6" id="block">
+            <div class="card" id="cards3">
+                <div class="card-body">
+                    <br><br>
+                    <p id="headers" style="text-align: center;">Finished</p>
+                    <ul>
+                            <li>Title:</li>
+                            <li>Description:</li>
+                            <br><br><br>
+                            <li>Title:</li>
+                            <li>Description:</li>
+                            <br><br><br>
+                            <li>Title:</li>
+                            <li>Description:</li>
+                            <br><br><br>
+                            <li>Title:</li>
+                            <li>Description:</li>
+                            <br><br><br>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-6" id="block">
+            <div class="card" id="cards3">
+                <div class="card-body">
+                    <br><br>
+                    <p id="headers" style="text-align: center;">Author Favs</p>
+                    <ul>
+                            <li>Title:</li>
+                            <li>Description:</li>
+                            <br><br><br>
+                            <li>Title:</li>
+                            <li>Description:</li>
+                            <br><br><br>
+                            <li>Title:</li>
+                            <li>Description:</li>
+                            <br><br><br>
+                            <li>Title:</li>
+                            <li>Description:</li>
+                            <br><br><br>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6" id="block">
+            <div class="card" id="cards3">
+                <div class="card-body">
+                    <br><br>
+                    <p id="headers" style="text-align: center;">Similar Authors</p>
+                    <ul>
+                        <li>Author:</li>
+                        <li>Title:</li>
+                        <li>Description:</li>
+                        <br><br><br><br>
+                        <li>Author:</li>
+                        <li>Title:</li>
+                        <li>Description:</li>
+                        <br><br><br><br>
+                        <li>Author:</li>
+                        <li>Title:</li>
+                        <li>Description:</li>
+                        <br><br><br><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <!--FOOTER-->
+    <div class="footer p-5 text-white">
+        &copy; 2019 Aleia Knight
+    </div>
+</body>
+
+</html>
