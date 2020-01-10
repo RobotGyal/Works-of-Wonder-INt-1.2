@@ -1,4 +1,6 @@
 {% load static %}
+{% load crispy_forms_tags %}
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -22,8 +24,8 @@
             {% csrf_token %}
             <fieldset class ="form-group">
                 <legend>
-                    Sign UP</legend>
-                    {{ form.as_p }}
+                    Sign Up</legend>
+                    {{ form|crispy }}
             </fieldset>
             <div class = 'form-group'>
                 <button class = 'btn btn-outline-info' type="submit">Submit</button>
