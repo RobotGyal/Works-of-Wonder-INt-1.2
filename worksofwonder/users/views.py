@@ -1,7 +1,10 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 from django.contrib import messages
+from django.http import HttpResponseRedirect, HttpResponse
+from django.urls import reverse
 from .forms import UserSignUpForm
+
 
 # Create your views here.
 def signup(request):
@@ -15,3 +18,10 @@ def signup(request):
     else:
         form = UserSignUpForm()
     return render(request, 'users/signup.html', {'form': form})
+
+
+def login(request):
+    form = AuthenticationForm()
+    return render(request = request,
+                  template_name = "users/login.html",
+                  context={"form":form})

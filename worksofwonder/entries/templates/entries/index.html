@@ -22,12 +22,12 @@
     <nav class="navbar navbar-expand navbar-dark justify-content-center">
         <h1>Works of Wonder</h1>
 
-        {% if user.is_authenticated %}
+    {% if user.is_authenticated %}
         Hi {{ user.username }}!
-      {% else %}
+    {% else %}
         <p>You are not logged in</p>
         <a href="{% url 'login' %}">login</a>
-      {% endif %}
+    {% endif %}
 
       
 
@@ -48,7 +48,7 @@
             <div class="align-self-center col-6">
                 <br><br><br><br><br><br>
                 <h1>Writers</h1>
-                <form action='account/signup/' method='POST'>{% csrf_token %}
+                <form action='login/' method='POST'>{% csrf_token %}
                     <button type="submit" class="btn btn-outline-light btn-sm">Enter</button>
                 </form>            
             </div>

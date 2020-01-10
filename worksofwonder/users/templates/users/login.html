@@ -32,20 +32,18 @@
         <div class="row">
             <div class="col">
                 <br><br><br>
-                <form action="action_page.php">
-                    Username:<br>
-                    <input type="text" name="username" >
-                    <br><br>
-                    Password:<br>
-                    <input type="text" name="password">
-                    <br>
+                <form action="post">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-4">Log In</legend>
+                        {{ form.as_p }}
+                    </fieldset>
                   </form> 
 
-                  <form action='/' method='POST'>{% csrf_token %}
+                  <form action='/readers/' method='POST'>{% csrf_token %}
                     <button type="submit" class="btn btn-outline-light btn-sm">Submit</button>
                 </form>                  
-                <p>Create Account</p>
-                <p>Forgot Password</p>
+                <p><a href="{%url 'signup' %}">Create Account</a></p>
                 <p>Trouble Signing In?</p>
 
             </div>
