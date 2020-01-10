@@ -21,6 +21,16 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand navbar-dark justify-content-center">
         <h1>Works of Wonder</h1>
+
+        {% if user.is_authenticated %}
+        Hi {{ user.username }}!
+      {% else %}
+        <p>You are not logged in</p>
+        <a href="{% url 'login' %}">login</a>
+      {% endif %}
+
+      
+
     </nav>
 
 
