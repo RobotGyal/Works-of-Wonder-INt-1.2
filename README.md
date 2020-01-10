@@ -6,7 +6,7 @@ Secondly, to actively practice and display a full-stack web development skillset
 
 
 ## Live Site
-[Live Site] ('worksofwonder.herokuapp.com')
+[Live Site] (worksofwonder.herokuapp.com)
 
 ## Built With
 * Python 3
