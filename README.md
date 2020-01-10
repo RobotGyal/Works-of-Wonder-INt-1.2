@@ -33,7 +33,7 @@ def upload(request):
 ```
 
 ## Image
-![Image](Screen Shot 2020-01-10 at 1.45.42 PM.png)
+![Image](screenshot.png)
 
 ## How to Use
 Visit the Live Site! Test out Functionality, Peruse, and Enjoy!
