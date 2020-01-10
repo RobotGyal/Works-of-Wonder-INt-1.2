@@ -112,7 +112,12 @@
 
     </div>
 
-
+    {%for article in articles %}
+    <h1><strong>{{article.name}}</strong></h1>
+    <h3><strong>{{article.content}}</strong></h3>
+    <h3><strong>{{article.date_posted | date:"F d, Y"}}</strong></h3>
+    <h3><strong>{{article.author}}</strong></h3>
+{% endfor %}
 
 
     <!--FOOTER-->

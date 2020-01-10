@@ -9,7 +9,7 @@ def index(request):
 
 def readers(request):
     context={
-        'items':Articles.objects.all()
+        'articles':Articles.objects.all()
     }
     return render(request, 'entries/readers.html',context)
 
