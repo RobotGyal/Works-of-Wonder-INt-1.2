@@ -120,3 +120,7 @@ body{
     font-family: cursive;
     color: white;
 }
+
+select{
+    margin: 0px;
+}

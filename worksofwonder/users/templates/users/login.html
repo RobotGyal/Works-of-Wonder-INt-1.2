@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col">
                 <br><br><br>
-                <form action="post">
+                <form action="post" action="{% url 'login' %}">
                     {% csrf_token %}
                     <fieldset class="form-group">
                         <legend class="border-bottom mb-4">Log In</legend>
