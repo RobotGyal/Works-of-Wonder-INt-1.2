@@ -25,7 +25,7 @@ SECRET_KEY = 'd@_ehx(@=)3w0m8rtab6=gw#n+ntjaiyr1=ubmbfigf8x&0)$5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'worksofwonder.herokuapp.com']
 
 
 # Application definition
