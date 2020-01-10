@@ -41,13 +41,13 @@
 
 #dropdown{
     background-color: black;
-    border-bottom: 6px double #f8d971ad;
+    border-bottom: 6px double #8b8a84ad;
 }
 
 #cards{
     width: 320px;
-    height: 470px;
-    object-fit: cover;
+    height: 700px;
+    background-color:  #fae3976c;
 }
 
 .card-img:hover{
