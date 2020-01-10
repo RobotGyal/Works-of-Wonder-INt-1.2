@@ -28,7 +28,13 @@ def upload(request):
             upload_form.save()
             username =  upload_form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username} ')
-            return redirect('index')
+            return redirect('readers')
     else:
             upload_form = ArticleForm()
     return render(request, 'entries/upload.html', {'upload_form': upload_form})
+
+def about(request):
+    return render(request, 'entries/about.html')
+
+def contact(request):
+    return render(request, 'entries/contact.html')

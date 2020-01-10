@@ -8,6 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="static/entries/icon.png">
     <title>Works of Wonder</title>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color:black;">
+        <a href="{%url 'index' %}"><img src="/static/entries/mark.png" alt="home" style="width: 70px; height: 90px;">   </a>
+        <form class="form-inline ml-auto">
+          <div class="text-white">    <h4>User: {{user.username}}</h4></strong></div>
+          <a href="/logout" class="btn btn-outline-light btn-sm" style="margin-left: 20px;">Log Out</a>
+          <a href="/login" class="btn btn-outline-light btn-sm">Log In</a>
+          <a href="/account/signup" class="btn btn-outline-light btn-sm">Sign Up</a>
+        </form>
+      </nav>
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -20,17 +29,7 @@
 <body background = "static/entries/quiet.jpg" id="background">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand navbar-dark justify-content-center">
-        <h1>Works of Wonder</h1>
-
-    {% if user.is_authenticated %}
-        Hi {{ user.username }}!
-    {% else %}
-        <p>You are not logged in</p>
-        <a href="{% url 'login' %}">login</a>
-    {% endif %}
-
-      
-
+        <h1 style="font-size: 450%;">Works of Wonder</h1>
     </nav>
 
 
@@ -38,17 +37,17 @@
     <div class="jumbotron text-center hero-background-img">
         <div class="row">
             <div class="col-6">
-                <br><br><br><br><br><br>
+                <br><br><br><br>
                 <h1>Readers</h1>
-                <form action='account/signup/' method='POST'>{% csrf_token %}
+                <form action='readers/' method='POST'>{% csrf_token %}
                     <button type="submit" class="btn btn-outline-light btn-sm">Enter</button>
                 </form>
             </div>
             
             <div class="align-self-center col-6">
-                <br><br><br><br><br><br>
+                <br><br><br><br>
                 <h1>Writers</h1>
-                <form action='login/' method='POST'>{% csrf_token %}
+                <form action='writers/' method='POST'>{% csrf_token %}
                     <button type="submit" class="btn btn-outline-light btn-sm">Enter</button>
                 </form>            
             </div>
@@ -56,9 +55,16 @@
     </div>
 
     <!--FOOTER-->
-    <div class="footer p-6 text-white">
+<nav class="navbar fixed-bottom navbar-expand-md navbar-dark" style="background-color:black;">
+        <form class="form-inline">
+          <a href="/about" class="btn btn-outline-light btn-sm" style="margin-left: 20px;">About</a>
+          <a href="/contact" class="btn btn-outline-light btn-sm">Contact</a>
+        </form>
+        <div class="footer p-6 text-white ml-auto">
             &copy; 2019 Aleia Knight
           </div>
+      </nav>
+      
 </body>
 </html>
 
