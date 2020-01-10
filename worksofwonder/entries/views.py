@@ -18,3 +18,7 @@ def writers(request):
 
 def login(request):
     return render(request, 'login.html')
+
+def upload(request):
+    return render(request, 'entries/upload.html')
+

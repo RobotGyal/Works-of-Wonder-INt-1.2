@@ -20,9 +20,9 @@
 
 <body background = "static/entries/quiet.jpg" id="background-scroll">
     <!-- NAVBAR -->
-    <nav class="navbar sticky-top navbar-expand navbar-dark justify-content-center" id="header">
-            <a href="index.html">
-                <img src="mark.png" alt="HTML tutorial" style="width: 70px; height: 90px;">
+    <nav class="navbar navbar-expand navbar-dark justify-content-center">
+        <a href="{%url 'index' %}">
+                <img src="mark.png" alt="home" style="width: 70px; height: 90px;">
               </a>
         <h1>Readers</h1>
     </nav>
@@ -51,11 +51,11 @@
     <div class="col">
         <div class="card" id="cards">
             <!-- <img class="card-img img-fluid" style="width: fit-content; height: fit-content;" src="phone.jpg" alt="Card image cap"> -->
-            <h2><strong>{{article.name}}</strong></h2>
+            <h2><strong><u>{{article.name}}</u></strong></h2>
             <h6><strong>{{article.content}}</strong></h6>
             <br>
             <h4><strong>Date Posted: {{article.date_posted | date:"F d, Y"}}</strong></h4>
-            <h4><strong>User:{{article.author}}</strong></h4>
+            <h4><strong>User: {{article.author}}</strong></h4>
         </div>
     </div>
 {% endfor %}
