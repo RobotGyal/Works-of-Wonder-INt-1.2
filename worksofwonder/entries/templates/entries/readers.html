@@ -42,82 +42,25 @@
     <br><br>
 
 
-    <!--3 cards-->
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card" id="cards">
-                    <img class="card-img img-fluid" style="width: fit-content; height: fit-content;" src="fire.jpg" alt="Card image cap">
-                </div>
-            </div>
 
-            <div class="col">
-                <div class="card" id="cards">
-                    <img class="card-img img-fluid" style="width: fit-content; height: fit-content;"src="chi.jpg" alt="Card image cap">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card" id="cards">
-                    <img class="card-img img-fluid" style="width: fit-content; height: fit-content;" src="rose.jpg" alt="Card image cap">
-                </div>
-            </div>
-        </div>
-
-        <br><br><br>
-
-        <div class="row">
-
-            <div class="col">
-                <div class="card" id="cards">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card" id="cards">
-                    <img class="card-img img-fluid" style="width: fit-content; height: fit-content;" src="princess.jpg" alt="Card image cap">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card" id="cards">
-                    <img class="card-img img-fluid" style="width: fit-content; height: fit-content;" src="knight.jpg" alt="Card image cap">
-                </div>
-            </div>
-        </div>
-
-
-        <br><br><br>
-
-        <div class="row">
-            <div class="col">
-                <div class="card" id="cards">
-                    <img class="card-img img-fluid" style="width: fit-content; height: fit-content;" src="city.jpg" alt="Card image cap">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card" id="cards">
-                    <img class="card-img img-fluid" style="width: fit-content; height: fit-content;" src="field.jpg" alt="Card image cap">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card" id="cards">
-                    <img class="card-img img-fluid" style="width: fit-content; height: fit-content;" src="phone.jpg" alt="Card image cap">
-            </div>
-        </div>
-
-
-
-    </div>
-
+    <div class="row">
+    
     {%for article in articles %}
-    <h1><strong>{{article.name}}</strong></h1>
-    <h3><strong>{{article.content}}</strong></h3>
-    <h3><strong>{{article.date_posted | date:"F d, Y"}}</strong></h3>
-    <h3><strong>{{article.author}}</strong></h3>
+
+    <div class="col">
+        <div class="card" id="cards">
+            <!-- <img class="card-img img-fluid" style="width: fit-content; height: fit-content;" src="phone.jpg" alt="Card image cap"> -->
+            <h2><strong>{{article.name}}</strong></h2>
+            <h6><strong>{{article.content}}</strong></h6>
+            <br>
+            <h4><strong>Date Posted: {{article.date_posted | date:"F d, Y"}}</strong></h4>
+            <h4><strong>User:{{article.author}}</strong></h4>
+        </div>
+    </div>
 {% endfor %}
+</div>
+</div>
 
 
     <!--FOOTER-->
