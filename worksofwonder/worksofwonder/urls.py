@@ -30,4 +30,5 @@ urlpatterns = [
     path('about/',views.about,name="about"),
     path('contact/',views.contact,name="contact"),
     path('admin/', admin.site.urls),
+    path('profile/', user_views.profile, name='profile')
 ]
