@@ -1,7 +1,8 @@
 {% load static %}
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,41 +12,41 @@
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
     <link rel="stylesheet" type="text/css" href="{% static 'entries/styles.css' %}">
 </head>
 
 
-<body background = "/entries/static/entries/quiet.jpg" id="background">
+<body background="/entries/static/entries/quiet.jpg" id="background">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand navbar-dark justify-content-center">
-            <a href="{%url 'index' %}">
-                    <img src="mark.png" alt="home" style="width: 70px; height: 90px;">
-                  </a>
+        <a href="{%url 'index' %}">
+            <img src="mark.png" alt="home" style="width: 70px; height: 90px;">
+        </a>
         <h1>Upload</h1>
     </nav>
 
 
-    8  {% if submitted %}
-9      <p class="success">
-10         Your message was submitted successfully. Thank you.
-11     </p>
-12 
-13 {% else %}
-14     <form action="" method="post" novalidate>
-15     <table>
-16         {{ form.as_table }}
-17         <tr>
-18             <td>&nbsp;</td>
-19             <td><input type="submit" value="Submit"></td>
-20         </tr>
-21     </table>
-22     {% csrf_token %}
-23     </form>
-24 {% endif %}
+    <div class="content-section">
+    <form method='POST'>
+        {% csrf_token %}
+        <fieldset class ="form-group">
+            <legend>
+                Upload Content
+            </legend>
+                {{  upload_form.as_p }}
+        </fieldset>
+
+        <div class = 'form-group'>
+            <button class = 'btn btn-outline-info' type="submit">Submit</button>
+        </div>
+    </form>
+    </div>
 
 
 </body>
-</html>
 
+</html>
