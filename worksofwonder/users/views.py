@@ -20,8 +20,8 @@ def signup(request):
     return render(request, 'users/signup.html', {'form': form})
 
 
-def login(request):
-    form = AuthenticationForm()
-    return render(request = request,
-                  template_name = "users/login.html",
-                  context={"form":form})
+# def login(request):
+#     form = AuthenticationForm()
+#     return render(request = request,
+#                   template_name = "users/login.html",
+#                   context={"form":form})

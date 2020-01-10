@@ -37,17 +37,21 @@
     <div class="jumbotron text-center hero-background-img">
         <div class="row">
             <div class="col">
-                <form action="post" action="{% url 'login' %}">
+                <form method="post">
                     {% csrf_token %}
                     <fieldset class="form-group">
                         <legend class="border-bottom mb-4">Log In</legend>
                         {{ form.as_p }}
                     </fieldset>
+                    <div class = 'form-group'>
+                        <button type="submit" class="btn btn-outline-light btn-sm">Submit</button>
+
+                    </div>
                   </form> 
 
-                  <form action='/readers/' method='POST'>{% csrf_token %}
+                  <!-- <form action='/readers/' method='POST'>{% csrf_token %}
                     <button type="submit" class="btn btn-outline-light btn-sm">Submit</button>
-                </form>                  
+                </form>                   -->
                 <p><a href="{%url 'signup' %}">Create Account</a></p>
                 <p>Trouble Signing In?</p>
 
