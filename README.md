@@ -1,12 +1,12 @@
 # Works of Wonder
 
 ## Motivation
-This is a site of 2 parts:
-Secondly, to actively practice and display a full-stack web development skillset.
+- To actively practice and display a full-stack web development skillset.
+- Utilize backend technologies (Django, CRUD, Authentication/Authorization)
 
 
 ## Live Site
-[Live Site] (worksofwonder.herokuapp.com)
+[Works Of Wonder](worksofwonder.herokuapp.com)
 
 ## Built With
 * Python 3
